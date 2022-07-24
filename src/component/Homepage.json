@@ -1,0 +1,343 @@
+{
+    "Banners": [
+        {
+            "id": "1",
+            "url": "https://www.internetcreation.net/wp-content/uploads/2015/04/banner-e-commerce1-1500x491.png",
+            "alt": "product image"
+        },
+        {
+            "id": "2",
+            "url": "https://www.internetcreation.net/wp-content/uploads/2015/04/banner-e-commerce1-1500x491.png",
+            "alt": "product image"
+        },
+        {
+            "id": "3",
+            "url": "https://www.internetcreation.net/wp-content/uploads/2015/04/banner-e-commerce1-1500x491.png",
+            "alt": "product image"
+        }
+    ],
+    "Categories": [
+        {
+            "category_id": "1",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "2",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Ambroidary-Black-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "3",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "4",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "5",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "6",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "7",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "8",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        },
+        {
+            "category_id": "9",
+            "category_name": "Designer Tuxedo",
+            "category_img": "http://172.104.186.221:8000/media/product/short_images/Biege-Tuxedo.jpeg"
+        }
+    ],
+    "ProductDetails": [
+        {
+            "id": "1",
+            "product_id": "1a",
+            "currency": "₹",
+            "product_img": "https://thumbs.dreamstime.com/b/computer-cogs-technology-background-blue-banner-old-new-using-circuits-old-machine-31582628.jpg",
+            "product_name": "HM-8412 Premium Series Analog Watch  - For Boys & Girls",
+            "product_quantity": 0,
+            "product_category": "accessory",
+            "product_subcategory": "watch",
+            "product_rating": 4.8,
+            "mrp_price": 1999,
+            "discount_percent": 60,
+            "is_wishlisted": null,
+            "is_added_to_cart": true
+        },
+        {
+            "id": "2",
+            "product_id": "2a",
+            "currency": "₹",
+            "product_img": "https://img.lovepik.com/photo/40007/8154.jpg_wh300.jpg",
+            "product_name": "HM-8412 Premium Series Analog Watch  - For Boys & Girls",
+            "product_quantity": 2,
+            "product_category": "accessory",
+            "product_subcategory": "watch",
+            "product_rating": 3.6,
+            "mrp_price": 1999,
+            "discount_percent": 20,
+            "is_wishlisted": null,
+            "is_added_to_cart": false
+        },
+        {
+            "id": "3",
+            "product_id": "3a",
+            "currency": "₹",
+            "product_img": "https://img.lovepik.com/background/20211020/large/lovepik-blue-science-science-banner-background-image_400060007.jpg",
+            "product_name": "HM-8412 Premium Series Analog Watch  - For Boys & Girls",
+            "product_quantity": 0,
+            "product_category": "accessory",
+            "product_subcategory": "watch",
+            "product_rating": 3.4,
+            "mrp_price": 1999,
+            "discount_percent": 89,
+            "is_wishlisted": null,
+            "is_added_to_cart": true
+        },
+        {
+            "id": "4",
+            "product_id": "4a",
+            "currency": "₹",
+            "product_img": "https://thumbs.dreamstime.com/b/computer-cogs-technology-background-blue-banner-old-new-using-circuits-old-machine-31582628.jpg",
+            "product_name": "HM-8412 Premium Series Analog Watch  - For Boys & Girls",
+            "product_quantity": 0,
+            "product_category": "accessory",
+            "product_subcategory": "watch",
+            "product_rating": 2.6,
+            "mrp_price": 1999,
+            "discount_percent": 70,
+            "is_wishlisted": null,
+            "is_added_to_cart": false
+        },
+        {
+            "id": "5",
+            "product_id": "5a",
+            "currency": "₹",
+            "product_img": "https://thumbs.dreamstime.com/b/computer-cogs-technology-background-blue-banner-old-new-using-circuits-old-machine-31582628.jpg",
+            "product_name": "HM-8412 Premium Series Analog Watch  - For Boys & Girls",
+            "product_quantity": 0,
+            "product_category": "accessory",
+            "product_subcategory": "watch",
+            "product_rating": 2.4,
+            "mrp_price": 1999,
+            "discount_percent": 55,
+            "is_wishlisted": null,
+            "is_added_to_cart": null
+        }
+    ],
+    "BasicProductDetails": {
+        "id": "1",
+        "product_id": "1a",
+        "currency": "₹",
+        "product_img": "https://thumbs.dreamstime.com/b/computer-cogs-technology-background-blue-banner-old-new-using-circuits-old-machine-31582628.jpg",
+        "product_name": "HM-8412 Premium Series Analog Watch  - For Boys & Girls",
+        "product_category": "accessory",
+        "product_rating": 4.1,
+        "product_subcategory": "watch",
+        "mrp_price": 1999,
+        "discounted_price": 1100,
+        "discount_percent": 60,
+        "is_wishlisted": false,
+        "is_added_to_cart": false,
+        "ratings": 123,
+        "reviews": 45,
+        "product_images": [
+            "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-01.jpg",
+            "https://res-2.cloudinary.com/grover/image/upload/e_trim/c_limit,f_auto,fl_png8.lossy,h_1280,q_auto,w_1280/v1632398488/su3akeakgbtajboy0ipn.png",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RCqy-Fitr_hxyeshjP8miCapwibVtH60QhAp70dTc9IxzsrbhAY28isSQJaTgYr3mAo&usqp=CAU",
+            "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-5.jpg"
+        ],
+        "rate_review": [
+            {
+                "customer_name": "Raju",
+                "title": "perfect purchase",
+                "content": "Great phone, mindblowing. Performance wise to hatssoff.Looks are stunning, camera awesome.Sierra blue is very light shade. Silver and this not much difference.I got it on 25th septVery fast delivery!!Battery is quite good stays one full day with moderate use.",
+                "review_date": "12-MAR-2022",
+                "customer_rate": 3.2,
+                "uploaded_image": [
+                    "https://m.media-amazon.com/images/I/61-r9zOKBCL._AC_SR180,120_QL70_.jpg",
+                    "https://m.media-amazon.com/images/I/51cCOStn+rL._AC_UY218_.jpg"
+                ]
+            },
+            {
+                "customer_name": "rishi",
+                "title": "Worst product",
+                "content": "didn't like color",
+                "review_date": "18-MAR-2022",
+                "customer_rate": 2,
+                "uploaded_image": [
+                    "https://m.media-amazon.com/images/I/71tpxtLD0aL._AC_UY218_.jpg",
+                    "https://m.media-amazon.com/images/I/61i8Vjb17SL._SX522_.jpg"
+                ]
+            }
+        ],
+        "offer_details": [
+            {
+                "offer_id": "1",
+                "offer_type": "Exchange Offer",
+                "offer_detail": "Up to ₹18,100.00 off on Exchange",
+                "offer_url": "https://www.facebook.com/"
+            },
+            {
+                "offer_id": "2",
+                "offer_type": "Bank Offer",
+                "offer_detail": "10% off on SBI Credit Card EMI Transactions, up to ₹1500. On orders of ₹5000 and above",
+                "offer_url": "https://www.facebook.com/"
+            },
+            {
+                "offer_id": "3",
+                "offer_type": "Freebie",
+                "offer_detail": "BYJU'S 3 Live Classes worth ₹999",
+                "offer_url": "https://www.facebook.com/"
+            }
+        ],
+        "emi_option": [
+            {
+                "bank_name": "Axis Bank",
+                "emi_plans_list": [
+                    {
+                        "emi_plan": "₹9,830 x 3m",
+                        "interest": "₹627 (12.99%)",
+                        "total_cost": "₹29,490"
+                    }
+                ]
+            },
+            {
+                "bank_name": "Axis Bank",
+                "emi_plans_list": [
+                    {
+                        "emi_plan": "₹9,830 x 3m",
+                        "interest": "₹627 (12.99%)",
+                        "total_cost": "₹29,490"
+                    }
+                ]
+            },
+            {
+                "bank_name": "Axis Bank",
+                "emi_plans_list": [
+                    {
+                        "emi_plan": "₹9,830 x 3m",
+                        "interest": "₹627 (12.99%)",
+                        "total_cost": "₹29,490"
+                    }
+                ]
+            }
+        ],
+        "payment_option": []
+    },
+    "ProductOtherDetails": [
+        {
+            "title": "other details",
+            "key_points": [
+                "17 cm (6.7-inch) Super Retina XDR display with ProMotion for a faster, more responsive feel",
+                "Cinematic mode adds shallow depth of field and shifts focus automatically in your videos",
+                "Pro camera system with new 12MP Telephoto, Wide and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; macro photography; Photographic Styles, ProRes video, Smart HDR 4, Night mode, Apple",
+                "ProRAW, 4K Dolby Vision HDR recording",
+                "12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording",
+                "A15 Bionic chip for lightning-fast performance",
+                "Up to 28 hours of video playback, the best battery life ever in an iPhone",
+                "Durable design with Ceramic Shield"
+            ]
+        }
+    ],
+    "DetailedProductSpecification": [
+        {
+            "main_heading": "Basic Info",
+            "tabledSpecs": [
+                {
+                    "key": "In The Box",
+                    "value": "iPhone, USB-C to Lightning Cable, Documentation"
+                },
+                {
+                    "key": "Model Number",
+                    "value": "MLVW3HN/Ae"
+                },
+                {
+                    "key": "Model Name",
+                    "value": "Phone 13 Pro"
+                },
+                {
+                    "key": "Color",
+                    "value": "Silver"
+                },
+                {
+                    "key": "Browse Type",
+                    "value": "Smartphones"
+                },
+                {
+                    "key": "SIM Type",
+                    "value": "Dual Sim"
+                },
+                {
+                    "key": "Hybrid Sim Slot",
+                    "value": "No"
+                },
+                {
+                    "key": "Touchscreen",
+                    "value": "Yes"
+                },
+                {
+                    "key": "OTG Compatible",
+                    "value": "No"
+                },
+                {
+                    "key": "Sound Enhancements",
+                    "value": "Dolby Digital (AC-3), Dolby Digital Plus (E-AC-3), Dolby Atmos and Audible (Formats 2, 3, 4, Audible Enhanced Audio, AAX and AAX+), Spatial Audio Playback"
+                }
+            ]
+        },
+        {
+            "main_heading": "Os & Processor Features",
+            "tabledSpecs": [
+                {
+                    "key": "Operating System",
+                    "value": "iOS 15"
+                },
+                {
+                    "key": "Processor Type",
+                    "value": "A15 Bionic Chip"
+                },
+                {
+                    "key": "Processor Core",
+                    "value": "Hexa Core"
+                },
+                {
+                    "key": "Operating Frequency",
+                    "value": "2G GSM/EDGE: 850, 900, 1800, 1900 MHz, 3G UMTS/HSPA+/DC-HSDPA: 850, 900, 1700/2100, 1900, 2100 MHz, 4G TD-LTE: Bands 34, 38, 39, 40, 41, 42, 46, 48, 4G FDD-LTE: Bands 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 32, 66, 5G NR: Bands n1, n2, n3, n5, n7, n8, n12, n20, n25, n28, n30, n38, n40, n41, n48, n66, n77, n78, n79"
+                }
+            ]
+        },
+        {
+            "main_heading": "Camera Features",
+            "tabledSpecs": [
+                {
+                    "key": "Primary Camera Available",
+                    "value": "Yes"
+                },
+                {
+                    "key": "Primary Camera",
+                    "value": "12MP + 12MP + 12MP"
+                },
+                {
+                    "key": "Primary Camera Features",
+                    "value": "Pro 12MP Camera System (Telephoto, Wide and Ultra Wide), Telephoto: f/2.8 Aperture, Wide: f/1.5 Aperture, Ultra Wide: f/1.8 Aperture, 120 Degree FOV, 3x Optical Zoom In, 2x Optical Zoom out, 6x Optical Zoom Range, Digital Zoom up to 15x, Night Mode Portraits Enabled by LiDAR Scanner, Portrait Mode with Advanced Bokeh and Depth Control, Portrait Lighting with Six Effects (Natural, Studio, Contour, Stage, Stage Mono, High Key Mono), Dual Optical Image Stabilisation (Telephoto and Wide), Sensor shift Optical Image Stabilisation (Wide), Six element Lens (Telephoto and Ultra Wide), Seven element Lens (Wide), Panorama (up to 63MP), 100% Focus Pixels (Wide), Night Mode, Deep Fusion, Smart HDR 4, Photographic Styles, Macro Photography, Apple ProRAW, Wide Colour Capture for Photos and Live Photos, Lens Correction (Ultra Wide), Advanced Red-eye Correction, Photo Geotagging, Auto Image Stabilisation, Burst Mode, Image Formats Captured: HEIF and JPEG"
+                }
+            ]
+        }
+    ]
+}
