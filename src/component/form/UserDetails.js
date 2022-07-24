@@ -48,6 +48,7 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
         setError({ status: true });
       });
   };
+
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
       <Select
