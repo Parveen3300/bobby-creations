@@ -6,6 +6,7 @@ import "../form.scss";
 const { Option } = Select;
 
 const UserDetails = ({ setDisabled, setActiveKey }) => {
+  const [error, setError] = useState({ status: false, message: "" });
   const onFinish = async (props) => {
     let formData = new FormData();
 
@@ -44,22 +45,32 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
         }
       })
       .catch((err) => {
-        console.log("error");
+        setError({ status: true });
       });
   };
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
-      <Select style={{ width: 60 }}>
+      <Select
+        style={{
+          width: 70,
+        }}
+      >
         <Option value="91">+91</Option>
-        <Option value="92">+92</Option>
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
+        <Option value="11">+11</Option>
       </Select>
     </Form.Item>
   );
 
   return (
     <div className="user-details">
+      {error.status && (
+        <Alert
+          className="mb-4 px-3"
+          description={error.message || "Email or  m  obile number already exist."}
+          type="error"
+          showIcon
+        />
+      )}
       <Form
         name="normal_login"
         initialValues={{ remember: true }}

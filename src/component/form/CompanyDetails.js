@@ -27,6 +27,7 @@ const CompanyDetails = () => {
     formData.append("country_short_name", "IN");
     formData.append("country_long_name", "India");
     formData.append("location_timezone", "Asia/Kolkata");
+
     companyDetailsAPI(formData)
       .then((response) => {
         if (response.status === 201) {
@@ -39,7 +40,7 @@ const CompanyDetails = () => {
   };
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
-      <Select style={{ width: 60 }}>
+      <Select style={{ width: 70 }}>
         <Option value="91">+91</Option>
         <Option value="92">+92</Option>
         <Option value="86">+86</Option>
@@ -68,6 +69,7 @@ const CompanyDetails = () => {
       });
   }, []);
   return (
+
     <div className="company-details">
       <Form name="normal_login" onFinish={onFinish}>
         <Row gutter={24}>
