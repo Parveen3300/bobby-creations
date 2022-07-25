@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Typography, Tabs, Avatar, Space, Tooltip } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+// import { UserOutlined } from "@ant-design/icons";
 import UserDetails from "./form/UserDetails";
 import CompanyDetails from "./form/CompanyDetails";
 import { Link } from "react-router-dom";
@@ -9,10 +9,10 @@ const { TabPane } = Tabs;
 const Signup = () => {
   const [disabled, setDisabled] = useState(true);
   const [activeKey, setActiveKey] = useState("1");
-
+  const [customerId, setcustomerId] = useState("");
   return (
     <div className="signup">
-      <Card className="position-absolute top-50 start-50 translate-middle w-50 m-auto shadow px-4 pb-4">
+      <Card className="my-4 w-50 m-auto shadow px-4 pb-4">
         <div className="text-center">
           {/* <Avatar
             size={{ lg: 64, xl: 80, xxl: 100 }}
@@ -26,16 +26,24 @@ const Signup = () => {
         </Title>
         <Tabs defaultActiveKey={activeKey} activeKey={activeKey} type="card">
           <TabPane tab="USER DETAILS" key="1">
-            <UserDetails setDisabled={setDisabled} setActiveKey={setActiveKey} />
+            <UserDetails
+              setDisabled={setDisabled}
+              setActiveKey={setActiveKey}
+              customerId={customerId}
+              setcustomerId={setcustomerId}
+            />
           </TabPane>
           <TabPane tab="COMPANY DETAILS" disabled={disabled} key="2">
-            <CompanyDetails />
+            <CompanyDetails customerId={customerId} />
           </TabPane>
         </Tabs>
 
-        <Space className=''><p className="mb-0">Already have an Account ? </p><Link to="/login">Sign in</Link></Space>
+        <Space className="">
+          <p className="mb-0">Already have an Account ? </p>
+          <Link to="/login">Sign in</Link>
+        </Space>
       </Card>
-    </div >
+    </div>
   );
 };
 

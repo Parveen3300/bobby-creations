@@ -5,6 +5,7 @@ const uri = {
   userDetailsAPI: "/api/profile/create_profile/",
   companyDetailsAPI: "/api/profile/create_company/",
   getCountries: "/api/configurations/updated_records/",
+  signupOpt: "/api/otp/verification/",
 };
 
 export const userLogin = async (reqBody) => {
@@ -23,7 +24,6 @@ export const getCountries = async (reqBody) => {
   return await instance.get(uri.getCountries, reqBody);
 };
 
-
 export const configuration_update_records = async () => {
   var requestBody = {
     last_sync_datetime: "2017-10-22T10:06:50.120917",
@@ -32,4 +32,8 @@ export const configuration_update_records = async () => {
     location_timezone: "Asia/Kolkata",
   };
   return await instance.post(uri.getCountries, requestBody);
+};
+
+export const signupOpt = async (reqBody, headers) => {
+  return await instance.post(uri.signupOpt, reqBody, headers);
 };

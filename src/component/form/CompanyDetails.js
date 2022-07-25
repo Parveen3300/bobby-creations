@@ -1,10 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { InsertRowLeftOutlined, UserOutlined, MailOutlined, TagOutlined, } from "@ant-design/icons";
+import {
+  InsertRowLeftOutlined,
+  UserOutlined,
+  MailOutlined,
+  TagOutlined,
+} from "@ant-design/icons";
 import { Button, Select, Form, Input, Row, Col } from "antd";
 import "../form.scss";
-import { configuration_update_records, companyDetailsAPI } from "../../services/masterData";
+import { useNavigate } from "react-router-dom";
+import {
+  configuration_update_records,
+  companyDetailsAPI,
+} from "../../services/masterData";
 const { Option } = Select;
-const CompanyDetails = () => {
+
+const CompanyDetails = ({ customerId }) => {
+  const navigate = useNavigate();
   const [countries, setcountriesData] = useState([]);
   const [business, setBusinessData] = useState([]);
   const onFinish = async (props) => {
@@ -21,7 +32,7 @@ const CompanyDetails = () => {
     formData.append("longitude", "98.8978978");
     formData.append("isd", "91");
     formData.append("profile_picture", "");
-    formData.append("customer", "171");
+    formData.append("customer", customerId);
     formData.append("address", "abc");
     formData.append("country", props.country);
     formData.append("country_short_name", "IN");
@@ -32,6 +43,7 @@ const CompanyDetails = () => {
       .then((response) => {
         if (response.status === 201) {
           console.log(response.data);
+          navigate("/Otp-sent");
         }
       })
       .catch((err) => {
@@ -50,7 +62,6 @@ const CompanyDetails = () => {
   );
 
   useEffect(() => {
-    console.log("I am here");
     configuration_update_records()
       .then((res) => {
         console.log(
@@ -69,7 +80,6 @@ const CompanyDetails = () => {
       });
   }, []);
   return (
-
     <div className="company-details">
       <Form name="normal_login" onFinish={onFinish}>
         <Row gutter={24}>
@@ -90,7 +100,6 @@ const CompanyDetails = () => {
                 placeholder="Company Name"
               />
             </Form.Item>
-
           </Col>
 
           <Col md={12}>
@@ -162,7 +171,6 @@ const CompanyDetails = () => {
           </Col>
 
           <Col md={12}>
-
             <Form.Item name="country" rules={[{ required: true }]}>
               <Select placeholder="Select country" allowClear>
                 {countries.map((item, index) => {

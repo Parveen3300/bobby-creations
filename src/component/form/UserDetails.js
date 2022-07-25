@@ -1,15 +1,24 @@
 import React, { useState } from "react";
-import { LockOutlined, UserOutlined, MailOutlined, ProfileOutlined, } from "@ant-design/icons";
+import {
+  LockOutlined,
+  UserOutlined,
+  MailOutlined,
+  ProfileOutlined,
+} from "@ant-design/icons";
 import { Button, Row, Col, Select, Form, Input, Alert } from "antd";
 import { userDetailsAPI } from "../../services/masterData";
 import "../form.scss";
 const { Option } = Select;
 
-const UserDetails = ({ setDisabled, setActiveKey }) => {
+const UserDetails = ({
+  setDisabled,
+  setActiveKey,
+  customerId,
+  setcustomerId,
+}) => {
   const [error, setError] = useState({ status: false, message: "" });
   const onFinish = async (props) => {
     let formData = new FormData();
-
     formData.append("first_name", props.first_name);
     formData.append("middle_name", props.middle_name);
     formData.append("last_name", props.last_name);
@@ -41,7 +50,12 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
         if (response.status === 201) {
           console.log(response.data);
           setDisabled(false);
-          setActiveKey("2")
+          setActiveKey("2");
+          setcustomerId(response?.data?.api_create_profile?.profile_data?.id);
+          localStorage.setItem(
+            "userToken",
+            response?.data?.api_create_profile?.user_login_token
+          );
         }
       })
       .catch((err) => {
@@ -67,7 +81,9 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
       {error.status && (
         <Alert
           className="mb-4 px-3"
-          description={error.message || "Email or  m  obile number already exist."}
+          description={
+            error.message || "Email or  m  obile number already exist."
+          }
           type="error"
           showIcon
         />
@@ -75,10 +91,10 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
       <Form
         name="normal_login"
         initialValues={{ remember: true }}
-        autoComplete="off"
+        autoComplete="on"
         onFinish={onFinish}
       >
-        <Row gutter={24} className='mt-2'>
+        <Row gutter={24} className="mt-2">
           <Col md={12}>
             <Form.Item
               name="first_name"
@@ -159,7 +175,7 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
                 placeholder="Phone number"
                 className="form-input"
                 addonBefore={prefixSelector}
-              // style={{ width: "100%" }}
+                // style={{ width: "100%" }}
               />
             </Form.Item>
           </Col>
@@ -174,7 +190,9 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
               ]}
             >
               <Input
-                prefix={<ProfileOutlined className="site-form-item-icon me-2" />}
+                prefix={
+                  <ProfileOutlined className="site-form-item-icon me-2" />
+                }
                 placeholder="designation"
               />
             </Form.Item>
@@ -190,7 +208,10 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
               ]}
               hasFeedback
             >
-              <Input.Password prefix={<LockOutlined />} placeholder="Password" />
+              <Input.Password
+                prefix={<LockOutlined />}
+                placeholder="Password"
+              />
             </Form.Item>
           </Col>
           <Col md={12}>
@@ -209,7 +230,9 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
                       return Promise.resolve();
                     }
                     return Promise.reject(
-                      new Error("The two passwords that you entered do not match!")
+                      new Error(
+                        "The two passwords that you entered do not match!"
+                      )
                     );
                   },
                 }),
@@ -227,7 +250,7 @@ const UserDetails = ({ setDisabled, setActiveKey }) => {
                 type="primary"
                 htmlType="submit"
                 className="w-100 mt-4"
-              // onClick={() => setDisabled(false)}
+                // onClick={() => setDisabled(false)}
               >
                 Submit
               </Button>
