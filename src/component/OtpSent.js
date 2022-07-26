@@ -13,7 +13,7 @@ import { Header } from "antd/lib/layout/layout";
 import { useNavigate } from "react-router-dom";
 const { Title } = Typography;
 const OtpSent = () => {
-  const [error, setError] = useState({ status: false, message: "" });
+  const [error, setError] = useState(false);
   const [form] = Form.useForm();
   const navigate = useNavigate();
   const onFinish = (values) => {
@@ -36,7 +36,7 @@ const OtpSent = () => {
         }
       })
       .catch((err) => {
-        setError({ status: true });
+        setError(true);
       });
   };
 
@@ -55,10 +55,10 @@ const OtpSent = () => {
           </Title>
           <p>Enter OTP</p>
         </div>
-        {error.status && (
+        {error && (
           <Alert
             className="mb-2 px-3"
-            description={error.message || "Incorrect otp."}
+            description={"Incorrect otp."}
             type="error"
             showIcon
           />
