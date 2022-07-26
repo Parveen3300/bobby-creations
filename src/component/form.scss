@@ -25,20 +25,21 @@
 
 .otp-sent {
     form input {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
+        padding: 6px 12px;
+        color: #3E3E3E;
+        font-size: 16px !important;
+        border-radius: 6px;
+        height: 48px;
     }
 }
 
-.ant-layout-header {
-    height: 96px;
-    padding: 0px 50px;
-    color: rgba(0, 0, 0, .85);
-    line-height: 78px;
-    background: #ffff;
-}
+// .ant-layout-header {
+//     height: 96px;
+//     padding: 0px 50px;
+//     color: rgba(0, 0, 0, .85);
+//     line-height: 78px;
+//     background: #ffff;
+// }
 
 // .w-50 {
 //     width: 29% !important;
@@ -152,4 +153,14 @@ div.ant-typography-h4,
 div.ant-typography-h4>textarea,
 h4.ant-typography {
     font-size: 24px;
+}
+
+.ant-layout-header {
+    height: 96px!important;
+    padding: 0px 50px!important;
+     color: rgba(0, 0, 0, .85);
+     line-height: 78px;
+     background: #ffff!important;
+     display: flex;
+    justify-content: space-between;
 }

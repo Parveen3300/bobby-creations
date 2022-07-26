@@ -10,10 +10,10 @@ import {
   Tabs,
   Card,
 } from "antd";
+import "../component/form.scss";
 import { MenuOutlined } from "@ant-design/icons";
 import Banners from "./Homepage.json";
 import { Link } from "react-router-dom";
-import "../component/form.scss";
 import CategoryList from "./CategoryList";
 import ProductCard from "./ProductCard";
 const { TabPane } = Tabs;
@@ -33,21 +33,22 @@ const Home = () => {
             height={100}
           />
         </Link>
-        <Menu theme="light" mode="horizontal" className="float-end mt-2 w-50">
+        <Menu theme="light" mode="horizontal" className="  mt-3 w-50">
           <Menu.Item key="1">
             <Link to="/home">Items1</Link>
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/home">Items2</Link>
           </Menu.Item>{" "}
-          {/* <Menu.Item key="3">
+          <Menu.Item key="3">
             <Link to="/login">Login</Link>
-          </Menu.Item> */}
+          </Menu.Item>
           <Menu.Item key="4">
             <Link to="/Logout">Logout</Link>
           </Menu.Item>
         </Menu>
       </Header>
+
       <Carousel autoplay arrows className="w-100">
         {imagepath?.map((data, index) => (
           <Image
