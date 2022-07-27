@@ -6,6 +6,7 @@ const uri = {
   companyDetailsAPI: "/api/profile/create_company/",
   getCountries: "/api/configurations/updated_records/",
   signupOpt: "/api/otp/verification/",
+  homepage: "/api/homepage/",
 };
 
 export const userLogin = async (reqBody) => {
@@ -36,4 +37,8 @@ export const configuration_update_records = async () => {
 
 export const signupOpt = async (reqBody, headers) => {
   return await instance.post(uri.signupOpt, reqBody, headers);
+};
+
+export const homepage = async (reqBody, headers) => {
+  return await instance.post(uri.homepage, reqBody, headers);
 };

@@ -65,7 +65,11 @@ const OtpSent = () => {
         )}
         <Form name="basic" form={form} onFinish={onFinish}>
           <Form.Item name="opt1">
-            <InputNumber className="w-100 mt-3" type="text" />
+            <InputNumber
+              placeholder="Enter OTP"
+              className="w-100 mt-3"
+              type="text"
+            />
           </Form.Item>
           <Button type="primary" htmlType="submit" className="w-100 mt-1">
             Verify
