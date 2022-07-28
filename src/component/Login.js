@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Button, Image, Form, Input, Card, Typography, Alert, Space } from "antd";
+import {
+  Button,
+  Image,
+  Form,
+  Input,
+  Card,
+  Typography,
+  Alert,
+  Space,
+} from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { useNavigate, Link } from "react-router-dom";
 import { userLogin } from "../services/masterData";
@@ -80,18 +89,22 @@ const Login = () => {
             />
           </Form.Item>
 
-          <div className='mb-4 mt-1 text-end'>
+          <div className="mb-4 mt-1 text-end">
             <Link className="login-form-forgot" to="/forgot-password">
               Forgot password
             </Link>
           </div>
 
           <Form.Item>
-            <Button type="primary" htmlType="submit" className="w-100">
+            <Button htmlType="submit" className="w-100">
               Login
             </Button>
           </Form.Item>
-          <Space> <p className="mb-0">Don't have an Account ?</p> <a href="/signup">Sign up</a></Space>
+          <Space>
+            {" "}
+            <p className="mb-0">Don't have an Account ?</p>{" "}
+            <a href="/signup">Sign up</a>
+          </Space>
         </Form>
       </Card>
     </div>

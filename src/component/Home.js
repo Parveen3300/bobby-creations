@@ -34,15 +34,11 @@ const Home = () => {
       .then((response) => {
         if (response.status === 200) {
           setbanner(response.data.home_screen_service.new_banners);
-          console.log(
-            "bannner",
-            response.data.home_screen_service.mode_products[0].products_data[0]
-              .product_alias_name
-          );
-          setCategories(
-            response.data.home_screen_service.mode_products[0].products_data[0]
-              .product_alias_name
-          );
+          // console.log(
+          //   "bannnersssssss",
+          //   response.data.home_screen_service.mode_products[0].products_data[2]
+          // );
+          setCategories(response.data.home_screen_service);
         }
       })
       .catch((err) => {
@@ -63,13 +59,13 @@ const Home = () => {
             height={100}
           />
         </Link>
-        <Menu theme="light" mode="horizontal" className="  mt-3 w-50">
+        <Menu theme="light" mode="horizontal" className="mt-3 w-50">
           <Menu.Item key="1">
-            <Link to="/home">Items1</Link>
+            <Link to="/home">Item1</Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/home">Items2</Link>
-          </Menu.Item>{" "}
+            <Link to="/home">Item2</Link>
+          </Menu.Item>
           <Menu.Item key="3">
             <Link to="/login">Login</Link>
           </Menu.Item>
@@ -80,7 +76,7 @@ const Home = () => {
       </Header>
 
       <div className="banner">
-        <Carousel autoplay arrows effect="fade" className="h-50">
+        <Carousel autoplay arrows effect="fade" className="h-75">
           {banner.map((data, index) => (
             <Image
               src={"http://172.104.186.221:8000" + data.banner_image_large}
@@ -97,27 +93,45 @@ const Home = () => {
             <Tabs defaultActiveKey="1" type="card" className="ms-2">
               <TabPane tab="Tab 1" className="mt-5" key="1">
                 <Title level={4} className="mb-3">
-                  Tops-Tees
+                  Designer Dresses
                 </Title>
-                <Carousel arrows slidesToShow={4}>
-                  {console.log("data", Categories)}
-                  {Categories.Categories?.map((data, index) => {
-                    console.log("data", data);
-                    return (
-                      <>
-                        <Card className="mx-2">
-                          <Image
-                            preview={false}
-                            src={
-                              "http://172.104.186.221:8000" +
-                              data.product_image[0]
-                            }
-                          />
-                          <h6 className="mt-3">{data.Categories}</h6>
-                        </Card>
-                      </>
-                    );
-                  })}
+                <Carousel arrows slidesToShow={6}>
+                  <Card className="mx-2">
+                    <Image
+                      src={
+                        "http://172.104.186.221:8000" +
+                        Categories.mode_products[0].products_data[2]
+                          .product_image[0].large_image
+                      }
+                    />
+                    <h6 className="mt-3">
+                      {
+                        Categories.mode_products[0].products_data[2]
+                          .product_alias_name
+                      }
+                    </h6>
+                  </Card>
+
+                  <Card className="mx-4">
+                    <h6 className="mt-3">
+                      <Image
+                        src={
+                          "http://172.104.186.221:8000" +
+                          Categories.mode_products[0].products_data[0]
+                            .product_image[0].short_image
+                        }
+                      />
+                      {console.log(
+                        "images",
+                        Categories.mode_products[0].products_data[0]
+                          .product_image[0].short_image
+                      )}
+                      {
+                        Categories.mode_products[0].products_data[0]
+                          .product_alias_name
+                      }
+                    </h6>
+                  </Card>
                 </Carousel>
               </TabPane>
               <TabPane tab="Tab 2" className="mt-5" key="2">

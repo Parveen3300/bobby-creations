@@ -10,15 +10,40 @@ import {
   Space,
 } from "antd";
 import { MailOutlined } from "@ant-design/icons";
+import { forgotpassword } from "../services/masterData";
 import { Link, useNavigate } from "react-router-dom";
 const { Title } = Typography;
 
 const ForgotPassword = () => {
-  const navigate = useNavigate();
-  const oTpSent = () => {
-    navigate("/Otp-sent");
-  };
   const [visible, setVisible] = useState(false);
+  // const [forgot,setForgot] =useState();
+  const navigate = useNavigate();
+  const [form] = Form.useForm();
+  const oTpSent = () => {
+    navigate("/forgot-otp");
+  };
+
+  const onFinish = (values) => {
+    console.log("Received values of form: ", values);
+    const otpdata = {
+      email_id: values.email,
+      mobile_with_isd: "91",
+      country_long_name: "India",
+      country_short_name: "IN",
+      location_timezone: "Asia/Kolkata",
+    };
+    forgotpassword(otpdata)
+      .then((response) => {
+        console.log(response);
+        if (response.status === 200) {
+          console.log(response.data);
+          setVisible(true);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <>
@@ -43,7 +68,8 @@ const ForgotPassword = () => {
             name="basic"
             initialValues={{ remember: true }}
             autoComplete="off"
-            // onFinish={onFinish}
+            onFinish={onFinish}
+            form={form}
           >
             <Form.Item
               name="email"
@@ -65,12 +91,7 @@ const ForgotPassword = () => {
             </Form.Item>
 
             <Form.Item>
-              <Button
-                onClick={setVisible}
-                type="primary"
-                htmlType="submit"
-                className="w-100"
-              >
+              <Button htmlType="submit" className="w-100">
                 Send Otp
               </Button>
             </Form.Item>

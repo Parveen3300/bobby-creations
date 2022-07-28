@@ -247,7 +247,6 @@ const UserDetails = ({
           <Col md={24}>
             <Form.Item>
               <Button
-                type="primary"
                 htmlType="submit"
                 className="w-100 mt-4"
                 // onClick={() => setDisabled(false)}

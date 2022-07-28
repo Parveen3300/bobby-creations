@@ -26,11 +26,7 @@ const Demo = () => {
         </Form.Item>
 
         <Form.Item>
-          <Button
-            type="primary"
-            htmlType="submit"
-            className="login-form-button"
-          >
+          <Button htmlType="submit" className="login-form-button">
             sumbit
           </Button>
         </Form.Item>

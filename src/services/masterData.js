@@ -7,6 +7,7 @@ const uri = {
   getCountries: "/api/configurations/updated_records/",
   signupOpt: "/api/otp/verification/",
   homepage: "/api/homepage/",
+  forgotpassword: "/api/forgot/password/request/",
 };
 
 export const userLogin = async (reqBody) => {
@@ -41,4 +42,8 @@ export const signupOpt = async (reqBody, headers) => {
 
 export const homepage = async (reqBody, headers) => {
   return await instance.post(uri.homepage, reqBody, headers);
+};
+
+export const forgotpassword = async (reqBody, headers) => {
+  return await instance.post(uri.forgotpassword, reqBody, headers);
 };

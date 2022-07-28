@@ -185,7 +185,7 @@ const CompanyDetails = ({ customerId }) => {
           </Col>
         </Row>
         <Form.Item>
-          <Button type="primary" htmlType="submit" className="w-100 mt-4">
+          <Button htmlType="submit" className="w-100 mt-4">
             Submit
           </Button>
         </Form.Item>

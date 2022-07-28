@@ -78,21 +78,26 @@
   }
 
   .w-50 {
-    width: 40% !important;
+    width: 30% !important;
   }
 
   .ant-btn {
     color: #fff;
-    border-color: #21b4e2;
-    background: #21b4e2;
+    border-color: rgb(55, 52, 52);
+    background:rgb(55, 52, 52);
     padding: 4px 14px;
     height: 48px;
     font-size: 16px;
     border-radius: 6px;
+    &:hover ,&:focus {
+      color: #fff;
+      border-color: rgb(55, 52, 52);
+      background: rgb(55, 52, 52);
+  }
   }
 
   .ant-card-body {
-    padding: 0 24px 24px;
+    padding: 0 12px 12px;
   }
 
   .ant-input-group-addon:last-child,
@@ -179,7 +184,6 @@ h4.ant-typography {
     width: 100%;
   }
   .ant-image-img{
-    height: 500px!important;
     object-fit:cover;
   }
 }
