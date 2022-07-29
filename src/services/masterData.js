@@ -9,6 +9,7 @@ const uri = {
   homepage: "/api/homepage/",
   forgotpassword: "/api/forgot/password/request/",
   otpVerify: "/api/forgot/password/otp/verify/",
+  changePassword: "/api/forgot/change/password/",
 };
 
 export const userLogin = async (reqBody) => {
@@ -51,4 +52,8 @@ export const forgotpassword = async (reqBody, headers) => {
 
 export const otpVerify = async (reqBody, headers) => {
   return await instance.post(uri.otpVerify, reqBody, headers);
+};
+
+export const changePassword = async (reqBody) => {
+  return await instance.post(uri.changePassword, reqBody);
 };

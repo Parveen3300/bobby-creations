@@ -100,13 +100,13 @@ const Home = () => {
                     <Image
                       src={
                         "http://172.104.186.221:8000" +
-                        Categories.mode_products[0].products_data[2]
-                          .product_image[0].large_image
+                        Categories.mode_products?.[0]?.products_data?.[2]
+                          .product_image?.[0].large_image
                       }
                     />
                     <h6 className="mt-3">
                       {
-                        Categories.mode_products[0].products_data[2]
+                        Categories.mode_products?.[0]?.products_data?.[2]
                           .product_alias_name
                       }
                     </h6>
@@ -117,17 +117,17 @@ const Home = () => {
                       <Image
                         src={
                           "http://172.104.186.221:8000" +
-                          Categories.mode_products[0].products_data[0]
-                            .product_image[0].short_image
+                          Categories.mode_products?.[0]?.products_data?.[0]
+                            .product_image?.[0].short_image
                         }
                       />
                       {console.log(
                         "images",
-                        Categories.mode_products[0].products_data[0]
-                          .product_image[0].short_image
+                        Categories.mode_products?.[0].products_data?.[0]
+                          .product_image?.[0].short_image
                       )}
                       {
-                        Categories.mode_products[0].products_data[0]
+                        Categories.mode_products?.[0].products_data?.[0]
                           .product_alias_name
                       }
                     </h6>

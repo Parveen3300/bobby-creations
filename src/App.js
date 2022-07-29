@@ -8,6 +8,7 @@ import ForgotPassword from "./component/ForgotPassword";
 import OtpSent from "./component/OtpSent";
 import CompanyDetails from "./component/form/CompanyDetails";
 import ForgotOtp from "./component/ForgotOtp";
+import CreatePassword from "./component/CreatePassword";
 import Home from "./component/Home";
 import Demo from "./component/Demo";
 import "../src/component/form.scss";
@@ -20,6 +21,7 @@ const App = () => {
       <Route path="/Otp-sent" element={<OtpSent />} />
       <Route path="/home" element={<Home />} />
       <Route path="/forgot-otp" element={<ForgotOtp />} />
+      <Route path="/create-password" element={<CreatePassword />} />
       <Route path="/demo" element={<Demo />} />
       <Route path="/Company-Details" element={<CompanyDetails />} />
       <Route path="*" element={<Login />} />

@@ -6,37 +6,47 @@ import {
   Card,
   Typography,
   Alert,
+  Modal,
   InputNumber,
 } from "antd";
+import { useNavigate } from "react-router-dom";
 import { otpVerify } from "../services/masterData";
 const { Title } = Typography;
-const forgotOtp = () => {
-  // const [form] = Form.useForm()
-  //   const [error, setError] = useState(false);
-  const onFinish = (values) => {
-    var token = localStorage.getItem("userToken");
-    const header = `Authorization: token ${token}`;
+
+const ForgotOtp = (props) => {
+  // const [error, setError] = useState(false);
+  console.log("sdadas", props);
+  const navigate = useNavigate();
+  const [visible, setVisible] = useState(false);
+  const oTpSent = () => {
+    navigate("/create-password");
+  };
+
+  const [form] = Form.useForm();
+  const onFinish = (values, props) => {
+    // form.getFieldValue(["opt1"]);
+    console.log("values", values);
     const forgotverify = {
       validate_otp: values.opt1,
-      email_id: values.email,
-      mobile_with_isd: '91',
-      country_short_name: 'IN',
-      country_long_name: 'India',
-      location_timezone: 'Asia/Kolkata',
-    }
+      mobile_with_isd: "91",
+      email_id: props?.state?.email,
+      country_short_name: "IN",
+      country_long_name: "India",
+      location_timezone: "Asia/Kolkata",
+    };
     otpVerify(forgotverify)
       .then((response) => {
         console.log(response);
         if (response.status === 200) {
           console.log(response.data);
-          // navigate("/home");
+          setVisible(true);
         }
       })
       .catch((err) => {
         // setError(true);
-        console.log('err', err)
+        console.log("err", err);
       });
-  }
+  };
   return (
     <div className="otp-sent forgot-password">
       <Card className="position-absolute top-50 start-50 translate-middle w-50 m-auto px-md-5 py-4 shadow otp-sent">
@@ -60,7 +70,7 @@ const forgotOtp = () => {
             showIcon
           />
         )} */}
-        <Form name="basic" onFinish={onFinish}>
+        <Form name="basic" form={form} onFinish={onFinish}>
           <Form.Item name="opt1">
             <InputNumber
               placeholder="Enter OTP"
@@ -73,8 +83,24 @@ const forgotOtp = () => {
           </Button>
         </Form>
       </Card>
+
+      <Modal
+        title="Alert"
+        centered
+        visible={visible}
+        onOk={() => setVisible(false)}
+        onCancel={() => setVisible(false)}
+        width={300}
+        footer={false}
+        className="text-center"
+      >
+        <p>
+          You Have Successfully Verified Your Mobile Number. Create new Password
+        </p>
+        <Button onClick={oTpSent}>0k</Button>
+      </Modal>
     </div>
   );
 };
 
-export default forgotOtp;
+export default ForgotOtp;
