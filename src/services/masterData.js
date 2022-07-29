@@ -8,6 +8,7 @@ const uri = {
   signupOpt: "/api/otp/verification/",
   homepage: "/api/homepage/",
   forgotpassword: "/api/forgot/password/request/",
+  otpVerify: "/api/forgot/password/otp/verify/",
 };
 
 export const userLogin = async (reqBody) => {
@@ -46,4 +47,8 @@ export const homepage = async (reqBody, headers) => {
 
 export const forgotpassword = async (reqBody, headers) => {
   return await instance.post(uri.forgotpassword, reqBody, headers);
+};
+
+export const otpVerify = async (reqBody, headers) => {
+  return await instance.post(uri.otpVerify, reqBody, headers);
 };
