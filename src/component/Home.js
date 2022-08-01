@@ -22,7 +22,7 @@ const { Header } = Layout;
 const { Title } = Typography;
 const Home = () => {
   const [banner, setbanner] = useState([]);
-  const [Categories, setCategories] = useState([]);
+  const [Categories, setCategories] = useState("");
 
   useEffect(() => {
     homepage({
@@ -95,7 +95,7 @@ const Home = () => {
                 <Title level={4} className="mb-3">
                   Designer Dresses
                 </Title>
-                <Carousel arrows slidesToShow={6}>
+                {/* <Carousel arrows slidesToShow={6}>
                   <Card className="mx-2">
                     <Image
                       src={
@@ -111,27 +111,25 @@ const Home = () => {
                       }
                     </h6>
                   </Card>
+                </Carousel> */}
 
-                  <Card className="mx-4">
-                    <h6 className="mt-3">
-                      <Image
-                        src={
-                          "http://172.104.186.221:8000" +
-                          Categories.mode_products?.[0]?.products_data?.[0]
-                            .product_image?.[0].short_image
-                        }
-                      />
-                      {console.log(
-                        "images",
-                        Categories.mode_products?.[0].products_data?.[0]
-                          .product_image?.[0].short_image
-                      )}
-                      {
-                        Categories.mode_products?.[0].products_data?.[0]
-                          .product_alias_name
-                      }
-                    </h6>
-                  </Card>
+                <Carousel arrows slidesToShow={6}>
+                  {Categories?.Categories?.map((data) => {
+                    return (
+                      <>
+                        <Card className="mx-2">
+                          <Image
+                            src={
+                              "http://172.104.186.221:8000" +
+                              Categories.mode_products?.[0]?.products_data?.[2]
+                                .product_image?.[0].large_image
+                            }
+                          />
+                          <h6 className="mt-3">{data.product_alias_name}</h6>
+                        </Card>
+                      </>
+                    );
+                  })}
                 </Carousel>
               </TabPane>
               <TabPane tab="Tab 2" className="mt-5" key="2">

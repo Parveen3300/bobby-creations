@@ -48,10 +48,15 @@ const ForgotPassword = () => {
   };
 
   const oTpSent = () => {
-    navigate("/create-password");
+    navigate("/create-password", {
+      state: {
+        email_id: emailForm.getFieldValue("email"),
+        validate_otp: verifyOtpForm.getFieldValue(["opt1"]),
+      },
+    });
   };
 
-  const verifyOtp = (values, props) => {
+  const verifyOtp = (values, email) => {
     // form.getFieldValue(["opt1"]);
     console.log("email", emailForm.getFieldValue());
     const forgotverify = {
@@ -162,7 +167,7 @@ const ForgotPassword = () => {
             <Form
               name="emailForm"
               initialValues={{ remember: true }}
-              autoComplete="off"
+              autoComplete="on"
               onFinish={onFinish}
               form={emailForm}
             >

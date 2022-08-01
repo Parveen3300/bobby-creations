@@ -10,23 +10,24 @@ import {
   Space,
 } from "antd";
 import { LockOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { changePassword } from "../services/masterData";
 const { Title } = Typography;
 
 const CreatePassword = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [visible, setVisible] = useState(false);
   const oTpSent = () => {
     navigate("/login");
   };
   const [form] = Form.useForm();
   const onFinish = (values) => {
-    console.log("change", values);
+    console.log("change", location.state.validate_otp);
     const Passworddata = {
       mobile_with_isd: "91",
-      validate_otp: "418149",
-      email_id: "parveen.kr3300.21@gmail.com",
+      validate_otp: location.state.validate_otp,
+      email_id: location.state.email_id,
       new_password: values.changepassword,
       country_short_name: "IN",
       country_long_name: "India",
