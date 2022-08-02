@@ -71,7 +71,17 @@ const UserDetails = ({
         }}
       >
         <Option value="91">+91</Option>
-        <Option value="11">+11</Option>
+        <Option value="92">+92</Option>
+        <Option value="43">+43</Option>
+        <Option value="32">+32</Option>
+        <Option value="55">+55</Option>
+        <Option value="1">+1</Option>
+        <Option value="33">+33</Option>
+        <Option value="11">+506</Option>
+        <Option value="49">+49</Option>
+        <Option value="61">+61</Option>
+        <Option value="39">+39</Option>
+        <Option value="81">+81</Option>
       </Select>
     </Form.Item>
   );
@@ -90,7 +100,9 @@ const UserDetails = ({
       )}
       <Form
         name="normal_login"
-        initialValues={{ remember: true }}
+        initialValues={{
+          prefix: "91",
+        }}
         autoComplete="on"
         onFinish={onFinish}
       >
