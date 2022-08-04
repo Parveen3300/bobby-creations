@@ -16,13 +16,15 @@ const { Title } = Typography;
 
 const Login = () => {
   const [error, setError] = useState({ status: false, message: "" });
+  const [btnLoader, setBtnLoader] = useState(false);
   const navigate = useNavigate();
+
   const onFinish = async (props) => {
+    setBtnLoader(true);
     const emailRegex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
     const phoneRegex = new RegExp(
       "[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}"
     );
-
     userLogin({
       // email: props.email,
       // password: props.password,
@@ -38,6 +40,7 @@ const Login = () => {
       location_timezone: "Asia/Kolkata",
     })
       .then(async (response) => {
+        setBtnLoader(false);
         if (response.status === 200) {
           await {
             type: "LOGIN",
@@ -48,6 +51,7 @@ const Login = () => {
         }
       })
       .catch((err) => {
+        setBtnLoader(false);
         setError({ status: true });
       });
   };
@@ -96,7 +100,7 @@ const Login = () => {
           </div>
 
           <Form.Item>
-            <Button htmlType="submit" className="w-100">
+            <Button htmlType="submit" className="w-100" loading={btnLoader}>
               Login
             </Button>
           </Form.Item>

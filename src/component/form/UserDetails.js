@@ -48,7 +48,7 @@ const UserDetails = ({
     userDetailsAPI(formData)
       .then((response) => {
         if (response.status === 201) {
-          console.log(response.data);
+          console.log("parveeen", response.data);
           setDisabled(false);
           setActiveKey("2");
           setcustomerId(response?.data?.api_create_profile?.profile_data?.id);

@@ -5,7 +5,7 @@ import {
   MailOutlined,
   TagOutlined,
 } from "@ant-design/icons";
-import { Button, Select, Form, Input, Row, Col } from "antd";
+import { Button, Select, Form, Input, Row, Col, Space } from "antd";
 import "../form.scss";
 import { useNavigate } from "react-router-dom";
 import {
@@ -52,11 +52,14 @@ const CompanyDetails = ({ customerId }) => {
   };
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
-      <Select style={{ width: 70 }}>
-        <Option value="91">+91</Option>
-        <Option value="92">+92</Option>
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
+      <Select style={{ width: 76 }}>
+        {countries.map((item, index) => {
+          return (
+            <Option key={index} value={item.id}>
+              +{item.isd}
+            </Option>
+          );
+        })}
       </Select>
     </Form.Item>
   );
@@ -81,7 +84,13 @@ const CompanyDetails = ({ customerId }) => {
   }, []);
   return (
     <div className="company-details">
-      <Form name="normal_login" onFinish={onFinish}>
+      <Form
+        name="normal_login"
+        initialValues={{
+          prefix: "+91",
+        }}
+        onFinish={onFinish}
+      >
         <Row gutter={24}>
           <Col md={12}>
             <Form.Item
