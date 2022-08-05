@@ -12,7 +12,7 @@ import {
   InputNumber,
 } from "antd";
 import { MailOutlined } from "@ant-design/icons";
-import { forgotpassword, otpVerify } from "../services/masterData";
+import { forgotpassword, otpVerify } from "../../services/masterData";
 import { Link, useNavigate } from "react-router-dom";
 const { Title } = Typography;
 

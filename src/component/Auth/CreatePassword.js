@@ -1,17 +1,8 @@
 import React, { useState } from "react";
-import {
-  Button,
-  Image,
-  Form,
-  Input,
-  Card,
-  Typography,
-  Modal,
-  Space,
-} from "antd";
+import { Button, Image, Form, Input, Card, Typography, Modal } from "antd";
 import { LockOutlined } from "@ant-design/icons";
 import { useNavigate, useLocation } from "react-router-dom";
-import { changePassword } from "../services/masterData";
+import { changePassword } from "../../services/masterData";
 const { Title } = Typography;
 
 const CreatePassword = () => {

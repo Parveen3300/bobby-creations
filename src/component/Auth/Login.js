@@ -11,7 +11,7 @@ import {
 } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { useNavigate, Link } from "react-router-dom";
-import { userLogin } from "../services/masterData";
+import { userLogin } from "../../services/masterData";
 const { Title } = Typography;
 
 const Login = () => {

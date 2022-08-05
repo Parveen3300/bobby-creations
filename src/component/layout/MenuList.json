@@ -1,0 +1,125 @@
+
+{
+  "menuList": [
+    {
+      "key": "1",
+      "title": "Men",
+      "url": "",
+      "children": [
+        {
+          "key": "11",
+          "title": "one",
+          "url": ""
+        },
+        {
+          "key": "12",
+          "title": "two",
+          "url": ""
+        },
+        {
+          "key": "13",
+          "title": "three",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "key": "2",
+      "title": "Womans",
+      "url": ""
+    },
+    {
+      "key": "3",
+      "title": "Kids",
+      "url": "",
+      "children": [
+        {
+          "key": "31",
+          "title": "one",
+          "url": ""
+        },
+        {
+          "key": "32",
+          "title": "two",
+          "url": ""
+        },
+        {
+          "key": "33",
+          "title": "three",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "key": "4",
+      "title": "Electronic",
+      "url": "",
+      "children": [
+        {
+          "key": "41",
+          "title": "one",
+          "url": ""
+        },
+        {
+          "key": "42",
+          "title": "two",
+          "url": ""
+        },
+        {
+          "key": "43",
+          "title": "three",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "key": "5",
+      "title": "Gadgets",
+      "url": ""
+    },
+    {
+      "key": "6",
+      "title": "Mobiles",
+      "url": "",
+      "children": [
+        {
+          "key": "61",
+          "title": "one",
+          "url": ""
+        },
+        {
+          "key": "62",
+          "title": "two",
+          "url": ""
+        },
+        {
+          "key": "63",
+          "title": "three",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "key": "7",
+      "title": "Laptops",
+      "url": "",
+      "children": [
+        {
+          "key": "71",
+          "title": "one",
+          "url": ""
+        },
+        {
+          "key": "72",
+          "title": "two",
+          "url": ""
+        },
+        {
+          "key": "73",
+          "title": "three",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

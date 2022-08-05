@@ -6,8 +6,8 @@ import {
   ProfileOutlined,
 } from "@ant-design/icons";
 import { Button, Row, Col, Select, Form, Input, Alert } from "antd";
-import { userDetailsAPI } from "../../services/masterData";
-import "../form.scss";
+import { userDetailsAPI } from "../../../services/masterData";
+import "../../form.scss";
 const { Option } = Select;
 
 const UserDetails = ({

@@ -6,12 +6,12 @@ import {
   TagOutlined,
 } from "@ant-design/icons";
 import { Button, Select, Form, Input, Row, Col, Space } from "antd";
-import "../form.scss";
+import "../../form.scss";
 import { useNavigate } from "react-router-dom";
 import {
   configuration_update_records,
   companyDetailsAPI,
-} from "../../services/masterData";
+} from "../../../services/masterData";
 const { Option } = Select;
 
 const CompanyDetails = ({ customerId }) => {
