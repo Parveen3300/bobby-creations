@@ -9,6 +9,8 @@ import OtpSent from "./component/Auth/OtpSent";
 import CompanyDetails from "./component/Auth/form/CompanyDetails";
 import ForgotOtp from "./component/Auth/ForgotOtp";
 import CreatePassword from "./component/Auth/CreatePassword";
+import DesinerDress from "./component/layout/all-categories/DesinerDress";
+import Bottom from "./component/layout/all-categories/Bottom";
 import Home from "./component/layout/Home";
 import Demo from "./component/Demo";
 import "../src/component/form.scss";
@@ -24,6 +26,8 @@ const App = () => {
       <Route path="/create-password" element={<CreatePassword />} />
       <Route path="/demo" element={<Demo />} />
       <Route path="/Company-Details" element={<CompanyDetails />} />
+      <Route path="/desiner-dress" element={<DesinerDress />} />
+      <Route path="/bottom" element={<Bottom />} />
       <Route path="*" element={<Login />} />
     </Routes>
   );
