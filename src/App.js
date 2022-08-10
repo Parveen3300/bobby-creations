@@ -11,6 +11,9 @@ import ForgotOtp from "./component/Auth/ForgotOtp";
 import CreatePassword from "./component/Auth/CreatePassword";
 import DesinerDress from "./component/layout/all-categories/DesinerDress";
 import Bottom from "./component/layout/all-categories/Bottom";
+import WomenShirts from "./component/layout/all-categories/WomenShirts";
+import Summerdress from "./component/layout/all-categories/Summerdress";
+import AllCategories from "./component/layout/all-categories/AllCategories";
 import Home from "./component/layout/Home";
 import Demo from "./component/Demo";
 import "../src/component/form.scss";
@@ -28,6 +31,9 @@ const App = () => {
       <Route path="/Company-Details" element={<CompanyDetails />} />
       <Route path="/desiner-dress" element={<DesinerDress />} />
       <Route path="/bottom" element={<Bottom />} />
+      <Route path="/women-shirts" element={<WomenShirts />} />
+      <Route path="/summer-dress" element={<Summerdress />} />
+      <Route path="/categories" element={<AllCategories/>} />
       <Route path="*" element={<Login />} />
     </Routes>
   );

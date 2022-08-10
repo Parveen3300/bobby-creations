@@ -21,14 +21,14 @@ const menu = (
                     </a>
                 ),
             },
-            {
-                key: '2',
-                label: (
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                        <EnvironmentOutlined /> Order Tracking
-                    </a>
-                ),
-            },
+            // {
+            //     key: '2',
+            //     label: (
+            //         <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+            //             <EnvironmentOutlined /> Order Tracking
+            //         </a>
+            //     ),
+            // },
             {
                 key: '3',
                 label: (
@@ -40,7 +40,7 @@ const menu = (
             {
                 key: '4',
                 label: (
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+                    <a target="_blank" rel="noopener noreferrer" href="/login">
                         <ExportOutlined /> Sign Out
                     </a>
                 ),
@@ -49,9 +49,9 @@ const menu = (
     />
 );
 const Header = () => {
-  const [searchModal, setSearchModal] = useState(false);
-  const [itemsInCart, setItemsInCart] = useState(0);
-  let data = menuList.menuList;
+//   const [searchModal, setSearchModal] = useState(false);
+//   const [itemsInCart, setItemsInCart] = useState(0);
+//   let data = menuList.menuList;
   return (
     <div className='shadow-sm headeriind bg-white' style={{ position: "sticky", top: "0px", zIndex: "2" }}>
         <div className='container'>
@@ -76,13 +76,13 @@ const Header = () => {
                 <Col md={6}>
                     <div className='wca'>
                         <ul>
-                            <li><Link to="">   <Badge count={5}>
+                            <li><Link to="">   <Badge count={1}>
                                 <HeartOutlined />
                             </Badge></Link></li>
-                            <li><Link to=""><Badge count={2}>
-                                <ShoppingCartOutlined />
+                            <li><Link to=""><Badge count={1}>
+                                <ShoppingCartOutlined  />
                             </Badge></Link></li>
-                            <li><Link to=""><Badge count={6}>
+                            <li><Link to=""><Badge >
                             <BellOutlined />
                             </Badge></Link></li>
                             <li><Link to=""><Dropdown

@@ -1,21 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {
-  Layout,
-  Menu,
-  Carousel,
-  Typography,
-  Row,
-  Image,
-  Col,
-  Tabs,
-  Card,
-  Divider,
-  Space,
-  Button,
-} from "antd";
+import { Carousel, Typography, Row, Image, Col, Tabs, Card, Divider, Space, Button,} from "antd";
 import Header from "./Header";
 import "../../component/form.scss";
-import { homepage } from "../../services/masterData";
+import { homepage,productCount } from "../../services/masterData";
 // import CategoryList from "./CategoryList";
 import { StarOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -32,6 +19,9 @@ const Home = () => {
   const [bottoms, setBottoms] = useState([]);
   const [summerdress, setSummerdress] = useState([]);
   const [womenshirts, setWomenshirts] = useState([]);
+  const [productadd,setProdectadd] = useState()
+
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     homepage({
@@ -64,10 +54,32 @@ const Home = () => {
       });
   }, []);
 
+  useEffect(()=>{
+    productCount({
+      mode: 21,
+      product: 3504,
+      quantity: 60, 
+      add_or_remove: "True",
+      country_short_name: "IN",
+      country_long_name: "India",
+      location_timezone: "Asia/Kolkata",
+    })   
+    .then((response) => {
+      if (response.status === 200) {
+        setProdectadd(response);
+        console.log("addremovecart",response.data.api_cart_create.cart_add_remove.cart_wishlist_count)
+      }
+    })
+    .catch((err) => {
+      console.log("error");
+    });
+}, []);
+
+
   // let imagepath = Banners.Banners;
   return (
     <div className="container-fluid">
-      <Header />
+      <Header count={count}   />
       <div className="banner">
         <Carousel autoplay arrows effect="fade" className="h-75">
           {banner.map((data, index) => (
@@ -79,10 +91,13 @@ const Home = () => {
         </Carousel>
       </div>
 
-      <div className="mt-5 h-50 container" style={{ padding: "0px 12px" }}>
+      <div className="mt-5 h-50 container" style={{ padding: "0px 12px" }}>  
+        <div className="d-flex justify-content-between align-items-center">
         <Title level={4} className="my-5">
           Shop By Categories
-        </Title>
+          </Title>
+                <Button type='primary'  href="/categories">All Categories</Button>
+         </div>
         <Carousel arrows autoplay slidesToShow={4}>
           {shopCategories.map((data) => {
             return (
@@ -110,9 +125,8 @@ const Home = () => {
         </Carousel>
       </div>
 
-      <div className="container">
+      <div className="container mt-5">
         {/* <Divider /> */}
-
         <Tabs defaultActiveKey="1">
           <TabPane tab="Designer Dresses" key="1">
             <div className="mt-5 desiner-dress">
@@ -143,8 +157,8 @@ const Home = () => {
                         <h6 className="mt-3 fs-12">{data.product_name}</h6>
                         <Divider />
                         <div className="d-flex justify-content-between mx-2">
-                          <StarOutlined style={{ fontSize: "24" }} />
-                          <ShoppingCartOutlined style={{ fontSize: "24" }} />
+                          <StarOutlined style={{ fontSize: "24" }}  />
+                          <ShoppingCartOutlined style={{ fontSize: "24" }}  />
                         </div>
                       </Card>
                     </>
@@ -202,12 +216,15 @@ const Home = () => {
             <div className="Women-shirts">
               <Row gutter={36} className="mt-5">
                 <Col md={24}>
+                  <div className="d-flex justify-content-between">
                   <Title level={4} className="mb-3">
                     {
                       title.mode_products?.[3].products_data?.[0]
                         .product_modes?.[0].mode_name
                     }
                   </Title>
+                <Button href="/women-shirts">View All</Button>
+              </div>
                   <Carousel arrows autoplay slidesToShow={6}>
                     {womenshirts.map((data) => {
                       return (
@@ -244,12 +261,16 @@ const Home = () => {
             <div className="summer-dress">
               <Row gutter={36} className="mt-5">
                 <Col md={24}>
+              
+                  <div className="d-flex justify-content-between">
                   <Title level={4} className="mb-3">
                     {
                       title.mode_products?.[2].products_data?.[0]
                         .product_modes?.[0].mode_name
                     }
                   </Title>
+                <Button href="/summer-dress">View All</Button>
+              </div>
                   {/* <Carousel arrows autoplay slidesToShow={6}> */}
                   <Space>
                     {summerdress.map((data, i) => {
@@ -285,8 +306,6 @@ const Home = () => {
             </div>
           </TabPane>
         </Tabs>
-
-        <div className="my-5 ">{/* <CategoryList /> */}</div>
       </div>
     </div>
   );

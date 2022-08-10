@@ -37,7 +37,7 @@ const DesinerDress = () => {
         <div className="d-flex justify-content-between ">
           <Title level={4} className="mb-3">
             {
-              title.mode_products?.[0].products_data?.[0].product_modes?.[0]
+              title.mode_products?.[1].products_data?.[0].product_modes?.[0]
                 .mode_name
             }
           </Title>

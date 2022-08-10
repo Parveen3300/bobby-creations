@@ -1,0 +1,955 @@
+{
+  "status": true,
+  "keyname": null,
+  "home_screen_service": {
+    "new_banners": [
+      {
+        "id": 4,
+        "status": "1",
+        "active_status": true,
+        "created_at": "2022-07-05T12:08:41.419886",
+        "updated_at": "2022-07-07T05:53:49.809700",
+        "banner_title": "Banner 1",
+        "banner_image": "/media/product/banner_images/New-Arrival-1.jpeg",
+        "banner_image_large": "/media/product/banner_images_large/New-Arrival-1.jpeg",
+        "created_by": 93,
+        "updated_by": 93
+      },
+      {
+        "id": 5,
+        "status": "1",
+        "active_status": true,
+        "created_at": "2022-07-05T12:09:02.169175",
+        "updated_at": "2022-07-07T05:53:41.575152",
+        "banner_title": "Banner2",
+        "banner_image": "/media/product/banner_images/2.jpeg",
+        "banner_image_large": "/media/product/banner_images_large/2.jpeg",
+        "created_by": 93,
+        "updated_by": 93
+      },
+      {
+        "id": 6,
+        "status": "1",
+        "active_status": true,
+        "created_at": "2022-07-05T12:09:19.096072",
+        "updated_at": "2022-07-07T05:53:32.917432",
+        "banner_title": "Banner3",
+        "banner_image": "/media/product/banner_images/Spring.jpeg",
+        "banner_image_large": "/media/product/banner_images_large/Spring.jpeg",
+        "created_by": 93,
+        "updated_by": 93
+      }
+    ],
+    "ordered_modes": [
+      {
+        "id": 17
+      },
+      {
+        "id": 21
+      },
+      {
+        "id": 22
+      },
+      {
+        "id": 23
+      }
+    ],
+    "last_sync_datetime": "2022-08-05T06:33:52.366239",
+    "collection": {
+      
+    },
+    "mode_products": [
+      {
+        "products_data": [
+          {
+            "id": 3502,
+            "product_name": "Black-Elegant-Gown",
+            "product_alias_name": "Black-Elegant-Gown",
+            "product_code": "B17l",
+            "product_image": [
+              {
+                "id": 3465,
+                "short_image": "/media/product/short_images/Black-Elegant-Gown.jpg",
+                "large_image": "/media/product/large_image/Black-Elegant-Gown.jpg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3503,
+            "product_name": "Black-Red-Gown",
+            "product_alias_name": "Black-Red-Gown",
+            "product_code": "B9l",
+            "product_image": [
+              {
+                "id": 3466,
+                "short_image": "/media/product/short_images/Black-Red-Gown.jpg",
+                "large_image": "/media/product/large_image/Black-Red-Gown.jpg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3537,
+            "product_name": "Biege-Net-Gown",
+            "product_alias_name": "Biege-Net-Gown",
+            "product_code": "B4i",
+            "product_image": [
+              {
+                "id": 3500,
+                "short_image": "/media/product/short_images/Biege-Net-Gown.jpeg",
+                "large_image": "/media/product/large_image/Biege-Net-Gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3538,
+            "product_name": "Black-Net-Gown",
+            "product_alias_name": "Black-Net-Gown",
+            "product_code": "B7l",
+            "product_image": [
+              {
+                "id": 3501,
+                "short_image": "/media/product/short_images/Black-Net-Gown.jpeg",
+                "large_image": "/media/product/large_image/Black-Net-Gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3546,
+            "product_name": "Cinderella Wedding gown",
+            "product_alias_name": "Cinderella Wedding gown",
+            "product_code": "C5i",
+            "product_image": [
+              {
+                "id": 3509,
+                "short_image": "/media/product/short_images/Cinderella_Wedding_gown.jpeg",
+                "large_image": "/media/product/large_image/Cinderella_Wedding_gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3547,
+            "product_name": "Colorful Ombré Gown",
+            "product_alias_name": "Colorful Ombré Gown",
+            "product_code": "C19o",
+            "product_image": [
+              {
+                "id": 3510,
+                "short_image": "/media/product/short_images/Colorful_Ombre_Gown.jpeg",
+                "large_image": "/media/product/large_image/Colorful_Ombre_Gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3548,
+            "product_name": "Colorful Ombré Wedding Gowns",
+            "product_alias_name": "Colorful Ombré Wedding Gowns",
+            "product_code": "C4o",
+            "product_image": [
+              {
+                "id": 3511,
+                "short_image": "/media/product/short_images/Colorful_Ombre_Wedding_Gowns_-_.jpeg",
+                "large_image": "/media/product/large_image/Colorful_Ombre_Wedding_Gowns_-_.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3549,
+            "product_name": "Fairy-Gown",
+            "product_alias_name": "Fairy-Gown",
+            "product_code": "F15a",
+            "product_image": [
+              {
+                "id": 3512,
+                "short_image": "/media/product/short_images/Fairy-Gown.jpeg",
+                "large_image": "/media/product/large_image/Fairy-Gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3550,
+            "product_name": "Fish Cut Gown",
+            "product_alias_name": "Fish Cut Gown",
+            "product_code": "F4i",
+            "product_image": [
+              {
+                "id": 3513,
+                "short_image": "/media/product/short_images/Fish_Cut_Gown.jpeg",
+                "large_image": "/media/product/large_image/Fish_Cut_Gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3551,
+            "product_name": "Grey-Gown",
+            "product_alias_name": "Grey-Gown",
+            "product_code": "G5r",
+            "product_image": [
+              {
+                "id": 3514,
+                "short_image": "/media/product/short_images/Grey-Gown.jpeg",
+                "large_image": "/media/product/large_image/Grey-Gown.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 17,
+                "mode_name": "Designer Dresses",
+                "mode_code": "DD",
+                "ordering": 17
+              }
+            ],
+            "is_product_variant": false
+          }
+        ],
+        "mode_id": 17
+      },
+      {
+        "products_data": [
+          {
+            "id": 3539,
+            "product_name": "Biege Cotton Joggers",
+            "product_alias_name": "Biege Cotton Joggers",
+            "product_code": "B10i",
+            "product_image": [
+              {
+                "id": 3502,
+                "short_image": "/media/product/short_images/Biege%20Cotton%20Joggers.jpeg",
+                "large_image": "/media/product/large_image/Biege%20Cotton%20Joggers.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3540,
+            "product_name": "Blue Plazzo",
+            "product_alias_name": "Blue Plazzo",
+            "product_code": "B8l",
+            "product_image": [
+              {
+                "id": 3503,
+                "short_image": "/media/product/short_images/Blue%20Plazzo.jpeg",
+                "large_image": "/media/product/large_image/Blue%20Plazzo.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3541,
+            "product_name": "Fish Flare Trouser",
+            "product_alias_name": "Fish Flare Trouser",
+            "product_code": "F15i",
+            "product_image": [
+              {
+                "id": 3504,
+                "short_image": "/media/product/short_images/Fish_Flare_Trouser_PU052QB.jpeg",
+                "large_image": "/media/product/large_image/Fish_Flare_Trouser_PlF5DGu.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3542,
+            "product_name": "High waist Biege trouser",
+            "product_alias_name": "High waist Biege trouser",
+            "product_code": "H17i",
+            "product_image": [
+              {
+                "id": 3505,
+                "short_image": "/media/product/short_images/High_waist_Biege_trouser_pTVuFsu.jpeg",
+                "large_image": "/media/product/large_image/High_waist_Biege_trouser_1147Mvb.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3543,
+            "product_name": "Orange Shorts",
+            "product_alias_name": "Orange Shorts",
+            "product_code": "O19r",
+            "product_image": [
+              {
+                "id": 3506,
+                "short_image": "/media/product/short_images/Orange_Shorts_2XpdjDC.jpeg",
+                "large_image": "/media/product/large_image/Orange_Shorts_JhlypRY.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3544,
+            "product_name": "Red Bell Bottom Pants",
+            "product_alias_name": "Red Bell Bottom Pants",
+            "product_code": "R10e",
+            "product_image": [
+              {
+                "id": 3507,
+                "short_image": "/media/product/short_images/Red_Bell_Bottom_Pants_QGevYqu.jpeg",
+                "large_image": "/media/product/large_image/Red_Bell_Bottom_Pants_tQnAC1Y.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3545,
+            "product_name": "White Pants",
+            "product_alias_name": "White Pants",
+            "product_code": "W15h",
+            "product_image": [
+              {
+                "id": 3508,
+                "short_image": "/media/product/short_images/White_Pants_Ec7hZ5K.jpeg",
+                "large_image": "/media/product/large_image/White_Pants_mEI16tY.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 21,
+                "mode_name": "Bottoms",
+                "mode_code": "Bot",
+                "ordering": 21
+              }
+            ],
+            "is_product_variant": false
+          }
+        ],
+        "mode_id": 21
+      },
+      {
+        "products_data": [
+          {
+            "id": 3558,
+            "product_name": "White-Cotton-Dress",
+            "product_alias_name": "White-Cotton-Dress",
+            "product_code": "W17h",
+            "product_image": [
+              {
+                "id": 3521,
+                "short_image": "/media/product/short_images/White-Cotton-Dress.jpeg",
+                "large_image": "/media/product/large_image/White-Cotton-Dress.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 22,
+                "mode_name": "Summer Dress",
+                "mode_code": "SD",
+                "ordering": 22
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3559,
+            "product_name": "Blue-Lining-Dress",
+            "product_alias_name": "Blue-Lining-Dress",
+            "product_code": "B11l",
+            "product_image": [
+              {
+                "id": 3522,
+                "short_image": "/media/product/short_images/Blue-Lining-Dress.jpeg",
+                "large_image": "/media/product/large_image/Blue-Lining-Dress.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 22,
+                "mode_name": "Summer Dress",
+                "mode_code": "SD",
+                "ordering": 22
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3560,
+            "product_name": "Black-Floral-Dress",
+            "product_alias_name": "Black-Floral-Dress",
+            "product_code": "B12l",
+            "product_image": [
+              {
+                "id": 3523,
+                "short_image": "/media/product/short_images/Black-Floral-Dress.jpeg",
+                "large_image": "/media/product/large_image/Black-Floral-Dress.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 22,
+                "mode_name": "Summer Dress",
+                "mode_code": "SD",
+                "ordering": 22
+              }
+            ],
+            "is_product_variant": false
+          }
+        ],
+        "mode_id": 22
+      },
+      {
+        "products_data": [
+          {
+            "id": 3561,
+            "product_name": "Black&White-Abstract-Shirt",
+            "product_alias_name": "Black&White-Abstract-Shirt",
+            "product_code": "B16l",
+            "product_image": [
+              {
+                "id": 3524,
+                "short_image": "/media/product/short_images/Black%26White-Abstract-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Black%26White-Abstract-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3562,
+            "product_name": "Blue-Formal-Shirt",
+            "product_alias_name": "Blue-Formal-Shirt",
+            "product_code": "B14l",
+            "product_image": [
+              {
+                "id": 3525,
+                "short_image": "/media/product/short_images/Blue-Formal-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Blue-Formal-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3563,
+            "product_name": "Colorful-Check-Shirt",
+            "product_alias_name": "Colorful-Check-Shirt",
+            "product_code": "C18o",
+            "product_image": [
+              {
+                "id": 3526,
+                "short_image": "/media/product/short_images/Colorful-Check-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Colorful-Check-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3564,
+            "product_name": "Floral-Print-Shirt",
+            "product_alias_name": "Floral-Print-Shirt",
+            "product_code": "F6l",
+            "product_image": [
+              {
+                "id": 3527,
+                "short_image": "/media/product/short_images/Floral-Print-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Floral-Print-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3565,
+            "product_name": "Green-PastelAmbroidary-Shirt",
+            "product_alias_name": "Green-PastelAmbroidary-Shirt",
+            "product_code": "G14r",
+            "product_image": [
+              {
+                "id": 3528,
+                "short_image": "/media/product/short_images/Green-PastelAmbroidary-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Green-PastelAmbroidary-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3566,
+            "product_name": "Lining-Knot-Shirt",
+            "product_alias_name": "Lining-Knot-Shirt",
+            "product_code": "L13i",
+            "product_image": [
+              {
+                "id": 3529,
+                "short_image": "/media/product/short_images/Lining-Knot-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Lining-Knot-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3567,
+            "product_name": "long-Blue-Shirt",
+            "product_alias_name": "long-Blue-Shirt",
+            "product_code": "l19o",
+            "product_image": [
+              {
+                "id": 3530,
+                "short_image": "/media/product/short_images/long-Blue-Shirt.jpeg",
+                "large_image": "/media/product/large_image/long-Blue-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3568,
+            "product_name": "Long-Shirt",
+            "product_alias_name": "Long-Shirt",
+            "product_code": "L2o",
+            "product_image": [
+              {
+                "id": 3531,
+                "short_image": "/media/product/short_images/Long-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Long-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3569,
+            "product_name": "Mustard-check-shirt",
+            "product_alias_name": "Mustard-check-shirt",
+            "product_code": "M11u",
+            "product_image": [
+              {
+                "id": 3532,
+                "short_image": "/media/product/short_images/Mustard-check-shirt.jpeg",
+                "large_image": "/media/product/large_image/Mustard-check-shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          },
+          {
+            "id": 3570,
+            "product_name": "Pastel-Check-Shirt",
+            "product_alias_name": "Pastel-Check-Shirt",
+            "product_code": "P10a",
+            "product_image": [
+              {
+                "id": 3533,
+                "short_image": "/media/product/short_images/Pastel-Check-Shirt.jpeg",
+                "large_image": "/media/product/large_image/Pastel-Check-Shirt.jpeg"
+              }
+            ],
+            "is_added_to_wishlist": false,
+            "is_added_to_cart": false,
+            "min_order_quantity": 60,
+            "is_bookmarked": false,
+            "collections": [
+              
+            ],
+            "product_modes": [
+              {
+                "id": 23,
+                "mode_name": "Women Shirts",
+                "mode_code": "WS",
+                "ordering": 23
+              }
+            ],
+            "is_product_variant": false
+          }
+        ],
+        "mode_id": 23
+      }
+    ]
+  },
+  "message": null
+}

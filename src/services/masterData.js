@@ -10,6 +10,7 @@ const uri = {
   forgotpassword: "/api/forgot/password/request/",
   otpVerify: "/api/forgot/password/otp/verify/",
   changePassword: "/api/forgot/change/password/",
+  productCount:"/api/product/add-remove-cart/",
 };
 
 export const userLogin = async (reqBody) => {
@@ -56,4 +57,8 @@ export const otpVerify = async (reqBody, headers) => {
 
 export const changePassword = async (reqBody) => {
   return await instance.post(uri.changePassword, reqBody);
+};
+
+export const productCount = async (reqBody) => {
+  return await instance.post(uri.productCount, reqBody);
 };
